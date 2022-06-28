@@ -6,7 +6,10 @@ Quickly change you Mac's default browser from the status bar.
 
 ## Install
 
-> Coming soon
+1. Find the [latest release](https://github.com/robb-j/BrowserNow/releases)
+2. Download and unzip the app
+3. Drag it into your Applications folder
+4. Double click it to launch
 
 ## Release
 
