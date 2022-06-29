@@ -50,6 +50,7 @@ class AppMenu: NSObject {
             item.tag = BROWSER_TAG
             item.state = isCurrent ? .on : .off
             item.representedObject = browser
+            item.image = app.getBrowserIcon(browser)
             
             menu.insertItem(item, at: 0)
         }

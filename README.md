@@ -23,3 +23,8 @@ Quickly change you Mac's default browser from the status bar.
 8. Push the commit and tag to GitHub
 9. Wait for the app to be notorized
 10. Create a release from the tag, attach the notarised app and write the release notes
+
+## Notice
+
+Browser images are provided by [alrra/browser-logos](https://github.com/alrra/browser-logos)
+which are licenced under MIT.

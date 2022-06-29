@@ -37,4 +37,30 @@ struct BrowserNowApp {
         let url = NSWorkspace.shared.urlForApplication(toOpen: commonUrl) ?? fallbackBrowser
         return makeBrowser(fromUrl: url)
     }
+    
+    func getBrowserIcon(_ browser: Browser) -> NSImage? {
+        let lowercaseName = browser.name.lowercased()
+        
+        // TODO: can this be done better with pattern matching?
+        if (lowercaseName.contains("brave")) {
+            return NSImage(named: "BraveIcon")
+        }
+        if (lowercaseName.contains("chrome")) {
+            return NSImage(named: "ChromeIcon")
+        }
+        if (lowercaseName.contains("edge")) {
+            return NSImage(named: "EdgeIcon")
+        }
+        if (lowercaseName.contains("firefox")) {
+            return NSImage(named: "FirefoxIcon")
+        }
+        if (lowercaseName.contains("opera")) {
+            return NSImage(named: "OperaIcon")
+        }
+        if (lowercaseName.contains("safari")) {
+            return NSImage(named: "SafariIcon")
+        }
+        
+        return nil
+    }
 }

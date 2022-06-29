@@ -21,6 +21,8 @@
 		D458997A286B02A9009784EB /* AppMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4589975286AFABD009784EB /* AppMenu.xib */; };
 		D458997B286B02AA009784EB /* AppMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4589975286AFABD009784EB /* AppMenu.xib */; };
 		D458997D286B06AE009784EB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D458997C286B06AE009784EB /* main.swift */; };
+		D48FC7AD286C5CFD00534FF3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D48FC7AC286C5CFD00534FF3 /* README.md */; };
+		D48FC7AF286C5D0C00534FF3 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = D48FC7AE286C5D0C00534FF3 /* CHANGELOG.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		D4589975286AFABD009784EB /* AppMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppMenu.xib; sourceTree = "<group>"; };
 		D4589977286AFE3F009784EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D458997C286B06AE009784EB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D48FC7AC286C5CFD00534FF3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D48FC7AE286C5D0C00534FF3 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 		D4589938286AF978009784EB = {
 			isa = PBXGroup;
 			children = (
+				D48FC7AC286C5CFD00534FF3 /* README.md */,
+				D48FC7AE286C5D0C00534FF3 /* CHANGELOG.md */,
 				D4589943286AF978009784EB /* BrowserNow */,
 				D4589955286AF979009784EB /* BrowserNowTests */,
 				D458995F286AF979009784EB /* BrowserNowUITests */,
@@ -249,7 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D458994C286AF979009784EB /* Preview Assets.xcassets in Resources */,
+				D48FC7AF286C5D0C00534FF3 /* CHANGELOG.md in Resources */,
 				D4589976286AFABD009784EB /* AppMenu.xib in Resources */,
+				D48FC7AD286C5CFD00534FF3 /* README.md in Resources */,
 				D4589949286AF979009784EB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
