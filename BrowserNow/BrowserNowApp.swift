@@ -29,7 +29,7 @@ struct BrowserNowApp {
                 return makeBrowser(fromUrl: url)
             }
             .sorted { a, b in
-                return b.name < a.name
+                return b.name > a.name
             }
     }
     

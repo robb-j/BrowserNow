@@ -43,7 +43,7 @@ class AppMenu: NSObject {
             if item.tag != BROWSER_TAG { continue }
             menu.removeItem(item)
         }
-        for browser in app.getBrowsers() {
+        for browser in app.getBrowsers().reversed() {
             let isCurrent = browser.url == current.url
             let item = NSMenuItem(title: browser.name, action: #selector(pickBrowser(_:)), keyEquivalent: "")
             item.target = isCurrent ? nil : self
