@@ -32,8 +32,6 @@ class AppMenu: NSObject {
         statusItem.menu = menu
         statusItem.button?.font = NSFont.monospacedDigitSystemFont(ofSize: NSFont.systemFontSize, weight: .regular)
         statusItem.button?.image = NSImage(named: "StatusBarImage")
-        
-        render()
     }
     
     func render() {
@@ -43,7 +41,8 @@ class AppMenu: NSObject {
             if item.tag != BROWSER_TAG { continue }
             menu.removeItem(item)
         }
-        for browser in app.getBrowsers().reversed() {
+        let browsers = app.getBrowsers()
+        for (index, browser) in browsers.reversed().enumerated() {
             let isCurrent = browser.url == current.url
             let item = NSMenuItem(title: browser.name, action: #selector(pickBrowser(_:)), keyEquivalent: "")
             item.target = isCurrent ? nil : self
@@ -51,6 +50,7 @@ class AppMenu: NSObject {
             item.state = isCurrent ? .on : .off
             item.representedObject = browser
             item.image = app.getBrowserIcon(browser)
+            item.keyEquivalent = "\(browsers.count - index)"
             
             menu.insertItem(item, at: 0)
         }
