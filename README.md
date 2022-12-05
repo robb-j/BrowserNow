@@ -4,6 +4,13 @@ Quickly change you Mac's default browser from the status bar.
 
 ![The BrowserNow menu showing safari is active and Firefox is available](/screenshot.webp)
 
+## Ethos
+
+I make apps that I use regularly and I like high-quality apps.
+You can get this for free by downloading the release from GitHub,
+or you can support development by buying the app on the [App Store](https://apps.apple.com/gb/app/browsernow/id1633886387?mt=12)
+and you get automatic updates.
+
 ## Install
 
 1. Find the [latest release](https://github.com/robb-j/BrowserNow/releases)
@@ -23,3 +30,4 @@ Quickly change you Mac's default browser from the status bar.
 8. Push the commit and tag to GitHub
 9. Wait for the app to be notorized
 10. Create a release from the tag, attach the notarised app and write the release notes
+
