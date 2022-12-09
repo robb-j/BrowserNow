@@ -50,7 +50,10 @@ class AppMenu: NSObject {
             item.state = isCurrent ? .on : .off
             item.representedObject = browser
             item.image = app.getBrowserIcon(browser)
-            item.keyEquivalent = "\(browsers.count - index)"
+            
+            if browsers.count - index < 10 {
+                item.keyEquivalent = "\(browsers.count - index)"
+            }
             
             menu.insertItem(item, at: 0)
         }
