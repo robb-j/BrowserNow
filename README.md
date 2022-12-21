@@ -2,7 +2,7 @@
 
 Quickly change you Mac's default browser from the status bar.
 
-![The BrowserNow menu showing safari is active and Firefox is available](/screenshot.webp)
+![The BrowserNow menu showing safari is active and Firefox is available](/screenshot.png)
 
 ## Ethos
 
